@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Celine Stencil';
+    src: url('Celine-Stencil.woff2') format('woff2'),
+        url('Celine-Stencil.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Celine Stencil';
+    src: url('Celine-Stencil.woff2') format('woff2'),
+        url('Celine-Stencil.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

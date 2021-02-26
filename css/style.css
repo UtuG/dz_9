@@ -1,0 +1,445 @@
+@font-face {
+	font-family: "Celine Stencil";
+	src: url("Celine-Stencil.woff2") format("woff2"), url("Celine-Stencil.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Celine Stencil";
+	src: url("../fonts/Celine-Stencil.woff2") format("woff2"), url("../fonts/Celine-Stencil.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "progresspixel";
+	src: url("../fonts/progresspixel-bold.woff2") format("woff2"), url("../fonts/progresspixel-bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* *******RESET****** */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	/* Теперь размеры блоков включают в себя поля и рамки.
+	Все отступы и рамки обнулены. */
+}
+li {
+	list-style: none;
+	/* Отмена стилизвции списков. */
+}
+a,
+a:visited {
+	text-decoration: none;
+	/* Обнуляет стилизацию посещенных ссылок. */
+}
+a:hover {
+	text-decoration: none;
+	/* Обнуляет стилизацию для ссылок, которая появляеться при наведении на них курсора. */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	/* Значения будут унаследованы от родителя. */
+}
+img {
+	vertical-align: top;
+	/* Выравнивание верхнего края элемента по верху самого высокого элемента строки. */
+}
+body {
+	line-height: 1;
+	color: black;
+	font-size: 18px;
+	background-color: wheat;
+
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	font-display: swap;
+	font-family: "Celine Stencil";
+}
+/* Высота линии, цвет текста, шрифт и его размер по умолчанию,  */
+/* *******RESET****** */
+
+.container {
+	max-width: 94%;
+	height: 2500px;
+	margin: 0px auto;
+	padding: 1%;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+.nav_menu {
+	width: 100%;
+	position: fixed;
+	border: 2px solid black;
+	background-color: cornflowerblue;
+}
+.nav_menu h1:first-of-type {
+	display: inline-block;
+	font-size: 200%;
+	padding: 3px;
+	margin-left: 10%;
+	width: 400px;
+	color: slategrey;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.list {
+	font-size: 0px;
+
+	width: 1600px;
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	padding-left: 215%;
+}
+.link {
+	color: black;
+	text-decoration: underline;
+	padding: 5px;
+}
+
+.list > li {
+	margin-right: 15px;
+	display: inline-block;
+	border: 1px solid black;
+	font-size: 26px;
+	position: relative;
+}
+
+ul li:last-of-type {
+	margin-right: 0px;
+}
+
+.nav_menu span:first-child {
+	color: red;
+	font-size: 250%;
+}
+
+span ~ span {
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	font-family: "progresspixel";
+	color: seagreen;
+	font-size: 80%;
+}
+
+nav h2 {
+	position: sticky;
+	text-transform: uppercase;
+}
+
+.sublist li {
+	margin: 0px 0px 15px 0px;
+}
+
+.sublist li:last-child {
+	margin: 0px;
+}
+
+.sublist {
+	position: absolute;
+	top: 100%;
+	left: 13%;
+	border: 1px solid black;
+	background-color: black;
+	width: 100%;
+	display: none;
+}
+
+.sublist:last-child {
+	position: absolute;
+	top: 100%;
+
+	border: 1px solid black;
+	background-color: black;
+	width: 100%;
+	display: none;
+}
+
+.sublink {
+	padding: 5px 5px 5px 25px;
+	color: cornflowerblue;
+	position: relative;
+}
+
+.link::after {
+	content: "";
+	background: url(../img/down-arrow.png) 0 0 no-repeat;
+	margin-bottom: -7px;
+
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+
+.sublink::before {
+	content: "";
+	background: url(../img/wheel.png) 0 0 no-repeat;
+
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	position: absolute;
+	top: 25%;
+	left: 0%;
+	line-height: 90%;
+}
+
+.list > li:hover .sublist {
+	display: inline-block;
+	z-index: 1;
+}
+
+.sublink_II {
+	padding: 0px 5px 5px 25px;
+	color: seagreen;
+	position: relative;
+}
+
+.sublink_II::before {
+	content: "";
+	background: url(../img/wheel.png) 0 0 no-repeat;
+
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	line-height: 100%;
+}
+
+.sublist_II {
+	top: 70%;
+	left: 70%;
+	border: 1px solid black;
+	background-color: black;
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+
+.sublist > li:hover .sublist_II {
+	display: inline-block;
+	z-index: 1;
+}
+
+.sublist_II li {
+	margin: 0px 0px 15px 0px;
+}
+
+.sublist_II li:last-child {
+	margin: 0px;
+}
+
+.sublink_secret::after {
+	content: "";
+	background: url(../img/down-arrow.png) 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	margin-bottom: -7px;
+}
+
+.sublink_secret {
+	color: seagreen;
+	position: relative;
+}
+
+.sublist_II li:last-of-type {
+	font-size: 200%;
+}
+
+.sublist_II li:last-of-type:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 15%;
+	background: url(../img/ufo.png) 00 no-repeat;
+	z-index: 3;
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+}
+
+.light {
+	height: 0px;
+	width: 0px;
+	border-left: 320px solid transparent;
+	border-right: 320px solid transparent;
+	border-bottom: 640px solid #b1daaf;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	z-index: 2;
+	margin-left: -274px;
+	display: none;
+}
+.sublist_II li:last-of-type:hover .light {
+	display: inline-block;
+}
+
+.car {
+	width: 700px;
+	border-radius: 5% 45% 0% 15%;
+	border-bottom: 300px solid turquoise;
+	border-right: 30px solid transparent;
+	margin-top: 400px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.door_left {
+	position: absolute;
+	top: 50px;
+	left: 70px;
+	width: 220px;
+	height: 240px;
+	background: url(../img/car.jpg) 0 0/75% repeat;
+	border-radius: 15% 0% 45% 5%;
+	border: 3px solid slategray;
+}
+
+.open1 {
+	position: absolute;
+	top: 160px;
+	left: 255px;
+	width: 15px;
+	height: 50px;
+	background-color: slategray;
+	z-index: 5;
+	border-radius: 40% 0% 0% 40%;
+	border-right: 5px solid silver;
+}
+
+.door_right {
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	width: 220px;
+	height: 240px;
+	background: url(../img/car.jpg) 0 0/75% repeat;
+	border-radius: 5% 45% 0% 15%;
+	border: 3px solid slategray;
+}
+
+.open2 {
+	position: absolute;
+	top: 160px;
+	left: 315px;
+	width: 15px;
+	height: 50px;
+	background-color: slategray;
+	z-index: 5;
+	border-radius: 0% 40% 40% 0%;
+	border-left: 5px solid silver;
+}
+
+.window {
+	position: absolute;
+	top: 31px;
+	left: 529px;
+	width: 172px;
+	height: 120px;
+	background-color: skyblue;
+	border-radius: 5% 100% 0% 15%;
+	border: 3px solid slategray;
+}
+
+.stick {
+	position: absolute;
+	top: 41px;
+	left: 600px;
+	width: 4px;
+	height: 110px;
+	background-color: slategray;
+
+	z-index: 1;
+}
+
+.topbox {
+	position: absolute;
+	top: 155px;
+	left: 528px;
+	width: 165px;
+	height: 140px;
+	background: url(../img/car.jpg) 0 0/100% repeat;
+	border-radius: 25%;
+	border: 3px solid slategray;
+}
+
+.stick2 {
+	position: absolute;
+	top: 250px;
+	left: -35px;
+	width: 35px;
+	height: 10px;
+	background-color: silver;
+	border-top: 1px solid slategray;
+	border-left: 1px solid slategray;
+	border-right: 10px solid slategray;
+	border-bottom: 1px solid slategray;
+	border-radius: 0% 25% 25% 0%;
+}
+
+.back_wheel {
+	position: absolute;
+	top: 50px;
+	left: -55px;
+	width: 55px;
+	height: 100px;
+	border-radius: 25%;
+	background-color: black;
+}
+
+.wheel1 {
+	position: absolute;
+	top: 300px;
+	left: 70px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	background-color: gray;
+	border: 30px solid black;
+}
+
+.wheel2 {
+	position: absolute;
+	top: 300px;
+	left: 550px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	background-color: gray;
+	border: 30px solid black;
+}
+
+.absolute {
+	position: absolute;
+	top: -158px;
+	right: -20px;
+}
+
+.last_sublist {
+	left: -13%;
+}
